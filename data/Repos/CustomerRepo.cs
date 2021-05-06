@@ -1,43 +1,20 @@
-﻿using System;
+﻿using Data.EFModels;
 using Data.Interfaces;
-using Data.EFModels;
 using Domain.Models;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Data.Repos
 {
-    public class CustomerRepo : ICustomerRepo
+    public class CustomerRepo : CrudRepo<Customer>, ICustomerRepo
     {
-        private readonly BankAppDataContext db;
-
-        public CustomerRepo(BankAppDataContext db)
+        public CustomerRepo(BankAppDataContext db) : base(db)
         {
-            this.db = db;
-        }
-        public int Create(Customer entity)
-        {
-            db.Customers.Add(entity);
-            db.SaveChanges();
-            return entity.CustomerId;
         }
 
-        public void Delete(int id)
+        public List<Customer> GetPage(int count, int offset)
         {
-            Customer customer = db.Customers.Find(id);
-            db.Remove(customer);
-            db.SaveChanges();
-        }
-
-        public Customer Get(int id)
-        {
-            Customer customer = db.Customers.Find(id);
-            db.SaveChanges();
-            return customer;
-        }
-
-        public void Update(Customer entity)
-        {
-            Customer oldCustomer = db.Customers.Find(entity.CustomerId);
-            db.Entry(oldCustomer).OriginalValues.SetValues(entity);
-            db.SaveChanges();
+            return db.Customers.Skip(offset).Take(count).ToList();
         }
     }
 }

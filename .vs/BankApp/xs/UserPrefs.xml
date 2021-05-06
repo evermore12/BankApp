@@ -1,0 +1,69 @@
+﻿<Properties StartupConfiguration="{1841D383-F1D2-4EA2-B4BE-DCC6D3594730}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Api/Startup.cs" Line="42" Column="44" />
+      <File FileName="Api/Program.cs" Line="1" Column="1" />
+      <File FileName="data/Repos/CustomerRepo.cs" Line="29" Column="36" />
+      <File FileName="data/Interfaces/ICustomerRepo.cs" Line="7" Column="1" />
+      <File FileName="data/Interfaces/ICrud.cs" Line="9" Column="29" />
+      <File FileName="Data/EFModels/BankAppDataContext.cs" Line="30" Column="1" />
+      <File FileName="core/Services/CustomerService.cs" Line="19" Column="37" />
+      <File FileName="core/Interfaces/ICustomerService.cs" Line="9" Column="39" />
+      <File FileName="Api/Controllers/CustomerController.cs" Line="23" Column="1" />
+      <File FileName="data/Interfaces/IAccountRepo.cs" Line="6" Column="6" />
+      <File FileName="data/Repos/AccountRepo.cs" Line="18" Column="36" />
+      <File FileName="data/Interfaces/IAccountTypeRepo.cs" Line="7" Column="1" />
+      <File FileName="data/Repos/AccountTypeRepo.cs" Line="16" Column="41" />
+      <File FileName="data/Interfaces/ICardRepo.cs" Line="8" Column="6" />
+      <File FileName="data/Repos/CardRepo.cs" Line="7" Column="38" />
+      <File FileName="data/Repos/DispositionRepo.cs" Line="7" Column="40" />
+      <File FileName="data/Interfaces/IDispositionRepo.cs" Line="6" Column="51" />
+      <File FileName="data/Interfaces/ILoanRepo.cs" Line="7" Column="6" />
+      <File FileName="data/Interfaces/ITransactionRepo.cs" Line="2" Column="21" />
+      <File FileName="data/Repos/TransactionRepo.cs" Line="2" Column="21" />
+      <File FileName="data/Repos/LoanRepo.cs" Line="7" Column="30" />
+      <File FileName="Domain/Models/Transaction.cs" Line="10" Column="47" />
+      <File FileName="Domain/Models/Customer.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/AccountType.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/Account.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/Disposition.cs" Line="25" Column="1" />
+      <File FileName="core/Services/DIspositionService.cs" Line="20" Column="43" />
+      <File FileName="core/Interfaces/IDIspositionInterface.cs" Line="8" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BankApp" expanded="True">
+            <Node name="Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Core" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="DIspositionService.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Data" expanded="True">
+              <Node name="EFModels" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Repos" expanded="True" />
+            </Node>
+            <Node name="Domain" expanded="True">
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Api PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jonathanbjornebro/BankApp/Data/Repos/CustomerRepo.cs" relfile="Data/Repos/CustomerRepo.cs" line="23" column="1" />
+      <Breakpoint file="/Users/jonathanbjornebro/BankApp/Api/Controllers/CustomerController.cs" relfile="Api/Controllers/CustomerController.cs" line="23" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

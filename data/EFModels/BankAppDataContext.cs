@@ -30,7 +30,7 @@ namespace Data.EFModels
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=localhost; user id=SA; password=ffHqsY5d6R8V; database=BankAppData;");
+                optionsBuilder.UseSqlServer("server=localhost; database=BankAppData; trusted_connection=true");
             }
         }
 

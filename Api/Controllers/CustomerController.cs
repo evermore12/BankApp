@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Core.Interfaces;
 using Core.Services;
+using Domain.Models;
+using Data.Repos;
 
 namespace Api.Controllers
 {
@@ -17,12 +19,26 @@ namespace Api.Controllers
         {
             this.customerService = customerService;
         }
-        [HttpGet("{id}")]
-        public IActionResult RemoveCustomer(int id)
+        [HttpPost]
+        public IActionResult Create(Customer customer)
         {
-            customerService.RemoveCustomer(id);
-
+            return Ok(customerService.Create(customer));
+        }
+        [HttpGet("{id}")]
+        public IActionResult Remove(int id)
+        {
+            customerService.Delete(id);
             return Ok();
+        }
+        [HttpGet]
+        public IActionResult Get(int count, int offset)
+        {
+            return Ok(customerService.GetPage(count, offset));
+        }
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            return Ok(customerService.Get(id));
         }
     }
 }
